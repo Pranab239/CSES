@@ -5,6 +5,7 @@ bool BFS(int cycleNode, int n, vector<int>adjList[], vector<bool>& vis) {
 	queue<int> q;
 	q.push(cycleNode);
 	vis[cycleNode] = true;
+	
 	while(!q.empty()) {
 		int node = q.front();
 		q.pop();
